@@ -29,7 +29,9 @@ SECRET_KEY = 'django-insecure-hrmhrtl&q*0l!g_5d@*r4hh4x6fc)sex+*ix6i))9=hthr=bs+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+CORS_ALLOW_ALL_ORIGINS = True
+
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -58,7 +60,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",  # Allow requests from your React frontend
+    "http://localhost:3000", 
 ]
 
 ROOT_URLCONF = 'image_uploader.urls'
